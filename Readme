@@ -1,1 +1,43 @@
+# 🧬 BioTrace: Fungi Taxonomer Prototype
 
+A prototype pipeline for **fungal sequence classification and clustering**.  
+This project trains a deep learning model to classify fungal families from DNA sequences, and includes tools for clustering and visualization.
+
+---
+
+## 🚀 Quick Start in Google Colab
+
+You can run this project directly in Google Colab — no local setup needed:
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ayaan-7091/BioTrace-Fungi-Taxonomer-Prototype/blob/main/train_model.py)
+
+*(The badge above will open `train_model.py` in Colab. You can replace the path with any notebook or script you want to highlight.)*
+
+---
+
+## 📂 Repository Structure
+
+BioTrace-Fungi-Taxonomer-Prototype/
+├── fungi_labeled_data.csv # Dataset with sequences and family labels
+├── train_model.py # Script to train the CNN classifier
+├── fungi_family_classifier.h5 # Trained Keras model
+├── discover_clusters.py # Script for clustering embeddings
+├── fungi_final_clusters.csv # Output of clustering
+├── dashboard.py # Visualization dashboard
+├── cluster_visualization.png # Example cluster plot
+
+---
+
+## 🧪 Workflow
+
+1. **Prepare Data**  
+   The dataset (`fungi_labeled_data.csv`) includes sequences and their family labels.
+
+2. **Train Model**  
+   Run `train_model.py` to train a 1D CNN classifier. The trained model will be saved as `fungi_family_classifier.h5`.
+
+3. **Discover Clusters**  
+   Use `discover_clusters.py` to perform clustering on learned embeddings and save results.
+
+4. **Visualize**  
+   Launch `dashboard.py` to explore the clusters interactively.
